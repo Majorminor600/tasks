@@ -1,0 +1,12 @@
+{
+  "name": "task-manager",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

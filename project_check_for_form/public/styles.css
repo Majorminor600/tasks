@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #1976d2;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.task-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.task-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    flex: 1;
+    background-color: #fff;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.filters button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    background-color: #e8f5e9;
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-description {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+}
